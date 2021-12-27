@@ -16,7 +16,7 @@ namespace Client
 			});
 
 		static NativeOverlapped overlapped;
-		static IntPtr evt;
+		
 		static IntPtr pipe;
 		static uint bufSz = 512;
 		static unsafe IOCompletionCallback completionCallback;
