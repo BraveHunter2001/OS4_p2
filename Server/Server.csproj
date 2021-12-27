@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C88D042-1A95-44E5-A707-EFC497DD3150}</ProjectGuid>
+    <ProjectGuid>{C6E2812F-A784-4DB6-AEFB-EA0343C248FB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OS4_p2</RootNamespace>
-    <AssemblyName>OS4_p2</AssemblyName>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,15 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WinApi\Flags.cs" />
-    <Compile Include="WinApi\Functions.cs" />
-    <Compile Include="WinApi\Structure.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OS4_p2\OS4_p2.csproj">
+      <Project>{4c88d042-1a95-44e5-a707-efc497dd3150}</Project>
+      <Name>OS4_p2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
